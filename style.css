@@ -18,7 +18,9 @@
     --Very-darkblue: hsl(240, 100%, 5%);
 }
 
-
+body{
+    background-color: var(--Off-white);
+}
 
 /* navbar menu */
 .navbar{
