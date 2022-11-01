@@ -79,7 +79,6 @@ main{
 }
 .newmain{
     display: flex;
-    justify-content: space-evenly;
     width: 100%;
 }
 .mobile{
@@ -314,11 +313,9 @@ margin: 0.5em 2em;
     margin: 1em 0 0 0;
 }
 .news{
-    margin: 2em 2em 0 2em;
+    margin: 2em 10em 0 2em;
     height: fit-content;
-    width: 90%;
-    padding: 0 2em;
-
+    width: 88%;
     line-height: 4em;
 }
 
@@ -360,8 +357,11 @@ margin: 0.5em 2em;
     .web-cont{
         font-size: 3vw;
     }
+
     .news{
         margin-top: 2em;
+       
+       
     }
 
     h1{
