@@ -1,0 +1,396 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    padding: 0%;
+    margin: 0;
+}
+
+:root{
+    /* primary */
+    --Soft-orange: hsl(35, 77%, 62%);
+    --Soft-red: hsl(5, 85%, 63%);
+   
+    /* neutral */
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayish-blue: hsl(233, 8%, 79%);
+    --Dark-grayishblue: hsl(236, 13%, 42%);
+    --Very-darkblue: hsl(240, 100%, 5%);
+}
+
+
+
+/* navbar menu */
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    min-height: 12em;
+    padding:  0 10em;
+}
+.brand{
+    text-decoration: none;
+    font-size: 4rem;
+    font-weight: 800;
+    color: var(--Very-darkblue);
+    
+}
+.navmenu{
+   display: flex;
+   justify-content: space-evenly;
+   gap: 3rem;
+}
+li{
+    list-style: none;
+}
+.nav-link{
+    text-decoration: none;
+    font-family: 'inter';
+    font-size: 1rem;
+    color: var(--Dark-grayishblue);
+}
+.nav-link:hover{
+    color: var(--Soft-orange);
+    transition: 0.3s;
+}
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+.bar{
+    display: block;
+    width: 25px;
+    height:3px;
+    margin:5px auto;
+    -webkit-transition:all 0.3s ease in out;
+    transition:all 0.8s ease in out;
+    background-color:black;
+
+}
+
+/* navbar end */
+
+
+/* main */
+
+main{
+   display: block;
+    
+}
+.newmain{
+    display: flex;
+    justify-content: space-evenly;
+    width: 100%;
+}
+.mobile{
+    display: none;
+}
+.web-desc{
+    flex-direction: column;
+    max-width: 100%;
+    margin:  0 2em 0 10rem;
+}
+
+.web3-desk{
+    max-width: 100%;
+    height: auto;
+}
+
+.news{
+    background-color: var(--Very-darkblue);
+    width:65%;
+    margin:  0 10em 0em 0em;
+    padding: 0 2em 2em 2em;
+    height: fit-content;
+    line-height: 3em;
+}
+h1{
+    color: var(--Soft-orange);
+    font-family: 'inter';
+    line-height: 2.2em;
+    font-size: 2.5rem;
+}
+.content-link{
+    color: var(--Off-white);
+    font-family: 'inter';
+    font-size: 1.2rem;
+    text-decoration: none;
+    font-weight: 700;
+    line-height: 2em;
+}
+.content-link:hover{
+  color: var(--Soft-orange);
+}
+p{
+    color: var(--Grayish-blue);
+    font-family: 'inter';
+    font-size: 1rem;
+    line-height: 1.5em;
+    margin-bottom: 2em;
+    
+}
+.content{
+    border: 1px solid;
+    margin: 1em 0 0 0;
+    border-bottom-color: var(--Dark-grayishblue);
+
+}
+.content3{
+    margin: 1em 0 0 0;
+}
+.bright-content{
+    display: flex;
+    margin-top: 3em;
+}
+.bright{
+    color: var(--Very-darkblue);
+    font-size: 3.2vw;
+    width: 60%;
+    font-weight: 800;
+    font-family: 'inter';
+}
+.web-cont{
+    color: var(--Dark-grayishblue);
+    font-family: 'inter';
+    width: 78%;
+    font-size: 1.1vw;
+    padding: 0 1em 0 2em;
+    line-height: 1.5em;
+
+}
+.btn{
+    padding: 0.8em 2.2em;
+    width: 100%;
+    border-style:none ;
+    text-decoration: none;
+    line-height: 5em;
+    margin: 2.7em 1em 0 0;
+    background-color: var(--Soft-red);
+    color: var(--Off-white);
+}
+
+.btn:hover{
+background-color: var(--Very-darkblue);
+cursor: pointer;
+transition: 0.3s;
+}
+.technology{
+    display: flex;
+    margin: 4em 10em 0 10em;
+}
+.tech,.tech2,.tech3{
+    display: flex;
+    
+    
+}
+.retro-img,.laptop-img,.console-img{
+ width: 90%;
+ height: auto;
+}
+.tech-cont{
+    padding: 0em 0em 0 1em;
+    
+}
+.point{
+color:var(--Grayish-blue);
+font-size: 2rem;
+line-height: 1em;
+}
+.p1{
+ color: var(--Very-darkblue);
+ font-weight: 700;
+ text-decoration: none;
+ font-family: 'inter';
+ font-size: 1.1rem;
+ margin: 0;
+ line-height: 2.5em;
+}
+.p1:hover{
+ color: var(--Soft-red);
+}
+.p2{
+ color: var(--Dark-grayishblue);
+ font-size: 1rem;
+ line-height: 2em;
+}
+/* main close */
+
+/* footer */
+.attribution{
+    display: flex;
+    justify-content: center;
+    margin: 3em 0 4em 0;
+    font-size: 0.8em;
+    font-family: 'inter';
+}
+.link{
+    text-decoration: none;
+}
+
+
+@media(max-width:900px){
+
+    .navbar{
+        min-height: 5em;
+        padding: 0 2rem;
+    }
+    
+    .brand{
+        font-size: 2.5rem;
+        font-weight: 800;
+    }
+
+  .hamburger{
+    display:block;
+    transition:all 0.8s ease in out;
+  }
+  
+  .hamburger.active .bar:nth-child(2){
+    opacity:0;
+  }
+   .hamburger.active .bar:nth-child(1){
+    transform:translateY(8px)rotate(45deg);
+         transition:0.3s ;
+  }
+  .hamburger.active .bar:nth-child(3){
+     transform:translateY(-8px)rotate(-45deg);
+        transition:0.3s;
+  }
+
+  .navmenu{
+    position: fixed;
+    flex-direction: column;
+    justify-content: center;
+    right: -100%;
+    top: 0rem;
+    background-color:var(--Off-white);
+    width:70%;
+    height:100vh;
+    text-align:center;
+    transition:0.3s;
+
+  }
+  
+  .navitems{
+    width: auto;
+    text-align: left;
+    margin: -1rem 0 0rem 0;
+    padding: 0 24px;
+    
+  }
+  .nav-link{
+    color: var(--Very-darkblue);
+  }
+  .navmenu.active{
+    right:0;
+  }
+  .newmain{
+    flex-direction: column;
+  }
+  .mobile{
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+  .web3-desk{
+    display: none;
+  }
+  .web-desc{
+flex-direction: column;
+margin: 0.5em 2em;
+  }
+
+  .bright-content{
+    flex-direction: column;
+  }
+  .bright{
+    font-size: 8vw;
+    width: 80%;
+
+}
+.web-cont{
+    font-size: 1rem;
+    padding: 0;
+    margin: 1em 0 0 0;
+}
+.news{
+    margin: 0.5em 2em;
+    height: fit-content;
+    width: 90%;
+    padding: 0 2em 2em 2em;
+
+    line-height: 4em;
+}
+
+.content-link{
+    font-size:3vw;
+    line-height: 1.5em;
+    margin-bottom: 2em;
+}
+
+.technology{
+    flex-direction: column;
+    margin:4em 2em 2em 2em;
+}
+.retro-img{
+    width:120px;
+    height: fit-content;
+}
+.laptop-img{
+    width: 120px;
+    height: fit-content;
+}
+.console-img{
+    width: 120px;
+    height: fit-content;
+}
+.p1{
+    line-height: 2em;
+    font-size: 1.2rem;
+}
+.p2{
+    line-height: 1.6em;
+    font-size: 1.2rem;
+}
+
+}
+
+
+@media(max-width:480px){
+    .web-cont{
+        font-size: 3vw;
+    }
+    .news{
+        margin-top: 2em;
+    }
+
+    h1{
+        font-size: 10vw;
+        
+    }
+    .content-link{
+        font-size: 5vw;
+        
+    }
+    p{
+        font-size: 3.5vw;
+    }
+    .retro-img{
+        width:90px;
+        height: auto;
+    }
+    .laptop-img{
+        width: 90px;
+    }
+    .console-img{
+        width: 90px;
+    }
+    .p1{
+        line-height: 2em;
+        font-size: 3.5vw;
+    }
+    .p2{
+        line-height: 1.6em;
+        font-size:3.5vw;
+    }
+}
