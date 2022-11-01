@@ -314,10 +314,10 @@ margin: 0.5em 2em;
     margin: 1em 0 0 0;
 }
 .news{
-    margin: 0.5em 2em;
+    margin: 2em 2em 0 2em;
     height: fit-content;
     width: 90%;
-    padding: 0 2em 2em 2em;
+    padding: 0 2em;
 
     line-height: 4em;
 }
